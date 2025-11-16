@@ -1,0 +1,16 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+        - routes
+    level: 7
+
+    checkMissingTypehints: true
+    checkImplicitMixed: true
+
+    excludePaths:
+        - bootstrap/*
+        - storage/*
+        - vendor/*
